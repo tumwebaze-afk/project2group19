@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Kampala Hub</title>
+    <style>
+                body{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            background-color: gray;
+            
+        }
+        header{
+            background-color: white;
+            padding: 14px;
+            border-bottom: 1.5px solid red;
+        }
+        header div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header a{
+            color: green; /* clean Kampala part and everything that has a*/
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px;
+        }
+        nav{
+            display: flex; /*keep them on a row just*/
+            flex-wrap: wrap; /*moves them down if the row is not enough*/
+        }
+        nav .join-link{
+            background-color: green;
+            color: white;
+            padding: 7px 11px;
+            border-radius: 5px;
+        }
+        main{
+            max-width: 1070px; /*just keeps it centred with the help pr margin auto*/
+            margin: auto;
+            padding: 16px;
+        }
+        section{ /*basically everything under section, the different cards*/
+            background: white;
+            padding: 23px;
+            margin: 18px 0;
+            border-radius: 8px;
+        }
+        h1, h2, h2{
+            color: rgb(6, 79, 6);
+        }
+        article{
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            flex: 1;
+            min-width: 210px;
+        }
+        .hero{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            
+        }
+
+                footer{
+            background: rgb(3, 65, 3);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 25px; /*extend the content which is up, like put a gap btn*/
+        }
+        footer a{
+            color: white;
+            margin: 7px; /*space them, the links "a"*/
+        }
+
+        ol{
+            background-color: #f1f8f3;
+            padding: 25px 25px 25px 50px;
+            border-left: 5px solid #075d2c;
+            border-radius: 8px;
+            line-height: 2;
+            color: #245c3a;
+            font-size: 16px;
+            margin-top: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+    </style>
+</head>
+<body>
+
+     <header>
+        <div>
+            <a href="index.html">Clean Kampala</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="find collector.html">Find a Collector</a>
+                <a href="report.html">Report a Problem</a>
+                <a href="waste guide.html">Waste Guide</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+                <a class="Join-link" href ="join.html">Join as a Collector</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Simple Waste Sorting Guide</h1>
+            <p>Separating waste at home can make collection, recycling and safe disposal easier.</p>
+        </section>
+
+        <section>
+            <h2>Types of Waste</h2>
+            <div>
+            <article>
+                <h3>Biodegradable</h3>
+                <p>Food leftovers, fruit peels and garden waste. These can break down naturally.</p>
+                <h3>Plastic</h3>
+                <p>Newspapers, cartons and clean paper. Keep them dry for easier recycling.</p>
+                <h3>Sanitary</h3>
+                <p>Used sanitary materials and similar waste. Wrap them safely and follow local disposal guidance.</p>
+            </div>
+            </article>
+        </section>
+
+        <section>
+            <h2>How to Sort Waste</h2>
+            <ol> <!--just puts numbers-->
+                    <li>Use separate containers or bags for different waste types.</li>
+                    <li>Keep food waste away from clean paper and recyclable materials.</li>
+                    <li>Rinse containers when practical and allow them to dry.</li>
+                    <li>Store waste safely until the agreed collection day.</li>
+                    <li>Never throw rubbish into drainage channels or open spaces.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Why Dumping Waste in Drains is Harmful</h2>
+            <p>Waste can block water channels and contribute to flooding. It can also pollute water, attract pests and create unsafe conditions for people living nearby.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>♻ Clean Kamapla Hub</strong></p>
+        <p>Working together for a cleaner Kampala</p>
+        <p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="join.html">Join as a Collector</a>
+        </p>
+        <p>2026 Clean Kampala Hub</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Kampala Hub</title>
+    <style>
+                body{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            background-color: gray;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            background-color: white;
+            padding: 14px;
+            border-bottom: 1.5px solid red;
+        }
+        header div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header a{
+            color: green; /* clean Kampala part and everything that has a*/
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px;
+        }
+        nav{
+            display: flex; /*keep them on a row just*/
+            flex-wrap: wrap; /*moves them down if the row is not enough*/
+        }
+        nav .join-link{
+            background-color: green;
+            color: white;
+            padding: 7px 11px;
+            border-radius: 5px;
+        }
+        main{
+            max-width: 1070px; /*just keeps it centred with the help pr margin auto*/
+            margin: auto;
+            padding: 16px;
+        }
+        section{ /*basically everything under section, the different cards*/
+            background: white;
+            padding: 23px;
+            margin: 18px 0;
+            border-radius: 8px;
+        }
+        h1, h2{
+            color: rgb(6, 30, 6);
+        }
+        .small{
+            font-size: 0.9em;
+            color: #52645a;
+            text-align: center;
+            
+        }
+
+        button{
+            display: inline-block;
+            background: #176b45;
+            color: white;
+            padding: 9px 14px;
+            border: 0;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        input, textarea{
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            padding: 9px;
+            margin: 5px 0 14px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        label{
+            font-weight: bold;
+        }
+
+                footer{
+            background: rgb(3, 65, 3);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 25px; /*extend the content which is up, like put a gap btn*/
+        }
+        footer a{
+            color: white;
+            margin: 7px; /*space them, the links "a"*/
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">Clean Kampala</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="find collector.html">Find a Collector</a>
+                <a href="report.html">Report a Problem</a>
+                <a href="waste guide.html">Waste Guide</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+                <a class="Join-link" href ="join.html">Join as a Collector</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Contacts Us</h1>
+            <p>Any Questions about this contact us.</p>
+            <p><strong>Project:</strong> Clean Kampala Hub</p>
+            <p><strong>Team email:</strong>teamhub34@gmail.com <b>or</b> teamhub5@Yahoo.com</p>
+
+            <h2>Send an Enquiry</h2>
+            <form action="contact.html" method="get">
+                <label for="name">Your name</label>
+                <input id="name" name="name" required>
+
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit Enquiry</button>                
+            </form>
+            <p class="small">Thank you</p>
+        </section>       
+    </main>
+
+    <footer>
+        <p><strong>♻ Clean Kamapla Hub</strong></p>
+        <p>Working together for a cleaner Kampala</p>
+        <p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="join.html">Join as a Collector</a>
+        </p>
+        <p>2026 Clean Kampala Hub</p>
+    </footer>    
+    
+</body>
+</html>

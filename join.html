@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Kampala Hub</title>
+    <style>
+        body{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            background-color: gray;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            background-color: white;
+            padding: 14px;
+            border-bottom: 1.5px solid red;
+        }
+        header div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header a{
+            color: green; /* clean Kampala part and everything that has a*/
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px;
+        }
+        nav{
+            display: flex; /*keep them on a row just*/
+            flex-wrap: wrap; /*moves them down if the row is not enough*/
+        }
+        nav .join-link{
+            background-color: green;
+            color: white;
+            padding: 7px 11px;
+            border-radius: 5px;
+        }
+        main{
+            max-width: 1070px; /*just keeps it centred with the help pr margin auto*/
+            margin: auto;
+            padding: 16px;
+        }
+        section{ /*basically everything under section, the different cards*/
+            background: white;
+            padding: 23px;
+            margin: 18px 0;
+            border-radius: 8px;
+        }
+        h1, h2, h2{
+            color: #155b3d;
+        }
+        button {
+            display: inline-block;
+            background: #176b45;
+            color: white;
+            padding: 9px 14px;
+            border: 0;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        input{
+            display: block;
+            width: 10000px;
+            max-width: 600px;
+            padding: 9px;
+            margin: 5px 0 14px;
+            border: 1px solid maroon;
+            box-sizing: border-box;
+        }
+        
+        footer{
+            background: rgba(3, 65, 3, 0.634);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: auto; /*extend the content which is up, like put a gap btn*/
+        }
+        footer a{
+            color: white;
+            margin: 7px; /*space them, the links "a"*/
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">Clean Kampala</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="find collector.html">Find a Collector</a>
+                <a href="report.html">Report a Problem</a>
+                <a href="waste guide.html">Waste Guide</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+                <a class="Join-link" href ="join.html">Join as a Collector</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1><b>Join as a waste Collector</b></h1>
+            <p> Join us in keeping our country clean </p>
+            <form action="join sent.html" method="get">
+                <label for="company"> Company or Service name</label>
+                <input type="" name="companny" required>
+
+                <label for="areas">Areas served</label>
+                <input id="areas" name="areas" placeholder="Division and neighbourhood" required> <!--place holder puts it in the bocx that we want-->
+
+                <label for="days">Collection days</label>
+                <input id="days" name="days" placeholder="Example: Monday and Thursday" required>
+
+                 <label for="phone">Contact phone</label>
+                 <input id="phone" name="phone" type="tel" required>
+
+                <label for="fees"> Fee range</label>
+                <input id="fees" name="fees" placeholder="Example: UGX 10,000-20,000">
+                 
+                <button type="submit">Submit Details</button>
+            </form>
+            <p style="font-family: 'Courier New', Courier, monospace;"> Thank you</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>♻ Clean Kamapla Hub</strong></p>
+        <p>Working together for a cleaner Kampala</p>
+        <p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="join.html">Join as a Collector</a>
+        </p>
+        <p>2026 Clean Kampala Hub</p>
+    </footer>
+
+</body>
+</html>

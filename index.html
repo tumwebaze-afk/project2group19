@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Kampala Hub</title>
+    <style>
+        body{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            background-color: gray;
+            background-image: url("https://i.pinimg.com/1200x/19/37/5d/19375d254796e9e3c50d57d0c60d3bd6.jpg");
+            
+        }
+        header{
+            background-color: white;
+            padding: 14px;
+            border-bottom: 1.5px solid red;
+        }
+        header div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header a{
+            color: green; /* clean Kampala part and everything that has a*/
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px;
+        }
+        nav{
+            display: flex; /*keep them on a row just*/
+            flex-wrap: wrap; /*moves them down if the row is not enough*/
+        }
+        nav .join-link{
+            background-color: green;
+            color: white;
+            padding: 7px 11px;
+            border-radius: 5px;
+        }
+        main{
+            max-width: 1070px; /*just keeps it centred with the help pr margin auto*/
+            margin: auto;
+            padding: 16px;
+        }
+        section{ /*basically everything under section, the different cards*/
+            background: white;
+            padding: 23px;
+            margin: 18px 0;
+            border-radius: 8px;
+        }
+        h1, h2, h2{
+            color: rgb(6, 30, 6);
+        }
+        .hero{
+            padding: 35px 22px;
+            color: whitesmoke;
+            background: linear-gradient(90deg, rgba(27, 94, 63, 0.795), rgba(8, 73, 43, 0.6)),url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=85");
+            background-size: contain;
+
+        }
+        .cards{/* what you can do,.... all the three cards*/
+            display: flex; /*put in a row then the rap part just means if it doesnt fit in the row you can drop them down*/
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        article{
+            background: white;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 16px;
+            flex: 1; /*puts the cards horizontal*/
+            min-width: 210px; /*prevents cards from becoming too narrow and the min usually means it shouldnt go beyong that width.*/
+        }
+        .button{
+            display: inline-block;
+            background: green;
+            padding: 9px 14px;
+            color: white;
+            border: 0;
+            border-radius: 9px;
+            text-decoration: none;
+        }
+        footer{
+            background: rgb(3, 65, 3);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 25px; /*extend the content which is up, like put a gap btn*/
+        }
+        footer a{
+            color: white;
+            margin: 7px; /*space them, the links "a"*/
+        }
+        .small{
+            font-size: 0.9em;
+            color: green;
+        }
+        .submit{
+            background-color: green;
+            color: white;
+            padding: 12px 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer; /*just changes the cursor to a small hand when it reaches the option*/
+           
+        }
+        .b{
+            width: 700px;
+            padding: 12px;
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <a href="index.html">Clean Kampala</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="find collector.html">Find a Collector</a>
+                <a href="report.html">Report a Problem</a>
+                <a href="waste guide.html">Waste Guide</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+                <a class="Join-link" href ="join.html">Join as a Collector</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+        <section class="hero">
+            <h1>A clean Kampala Starts with Us</h1>
+            <p><b>Find waste collectors, report waste problems and learn simple ways to manage waste responsibly.</b></p>
+            <a class="button" href="find collector.html">Find a collector</a>
+            <a class="button" href="report.html">Report a problem</a>
+        </section>
+        <section>
+            <h2>Choose your Division</h2>
+            <p>Select your division below to view the directories examples.</p>
+            <label for="division">Kampala division</label> <br>
+            <select class="b"> <!--create a list of options-->
+            <option value="">choose a division</option>
+            <option value="central">Central</option>
+            <option value="Kawempe">Kawempe</option>
+            <option value="makindye">makindye</option>
+            <option value="nakawa">nakawa</option>
+            <option value="rubaga">rubaga</option>
+            </select> <br>  <!--close the option-->
+        <button class="submit">View collector dictionary</button> 
+        </form> 
+        <p class="small">The prototype opens the directory page. Use its division headings to find your areea.</p>
+        </section>
+
+        <section>
+            <h2> WHat you can Do</h2>
+            <div class="cards">
+                <article>
+                    <h3>Find a collector</h3>
+                    <p>View example waste collection information for Kampala division</p>
+                    <a href="find collector.html">Find a collector</a>
+                </article>
+                <article>
+                    <h3>Report a problem</h3>
+                    <p>View example waste collection information for Kampala division</p>
+                    <a href="report.html">Report a problem</a>
+                </article>
+                <article>
+                    <h3>Learn About easte</h3>
+                    <p>Learn how to separate waste and dispose of it responsibly.</p>
+                    <a href="waste guide.html">Read the waste guide</a>
+                </article>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Why Waste Managment Matters</h2>
+            <p>Poor waste disposal can block drainage channels, pollute the environment and create health risks. Better collection and waste sorting can help keep neighbourhoods clean.</p>
+            <a href="news.html">Read news and Notices</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>♻ Clean Kamapla Hub</strong></p>
+        <p>Working together for a cleaner Kampala</p>
+        <p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="join.html">Join as a Collector</a>
+        </p>
+        <p>2026 Clean Kampala Hub</p>
+    </footer>
+</body>
+</html>
